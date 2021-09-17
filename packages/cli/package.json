@@ -1,0 +1,37 @@
+{
+  "author": "TypeSafe.js",
+  "ava": {
+    "failWithoutAssertions": false,
+    "files": [
+      "test/**/*.test.js"
+    ]
+  },
+  "bin": {
+    "tsjsc": "bin/compile.js",
+    "tsjslint": "bin/lint.js"
+  },
+  "description": "Utilities for compiling JavaScript",
+  "dependencies": {
+    "@types/node": "^16.9.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsdoc": "^36.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "lerna": "^4.0.0"
+  },
+  "license": "ISC",
+  "name": "@typesafejs/cli",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "version": "0.2.0"
+}

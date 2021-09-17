@@ -1,0 +1,15 @@
+{
+  "description": "ESLint configuration for type safe JavaScript",
+  "dependencies": {
+    "@typesafejs/shared": "0.2.0"
+  },
+  "license": "ISC",
+  "name": "@typesafejs/eslint-config",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "version": "0.2.0"
+}
