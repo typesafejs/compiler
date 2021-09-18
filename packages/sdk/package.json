@@ -1,9 +1,9 @@
 {
   "description": "Umbrella project for type-safe JavaScript",
   "dependencies": {
-    "@typesafejs/cli": "^0.2.1",
-    "@typesafejs/eslint-config": "^0.2.1",
-    "@typesafejs/shared": "^0.2.1"
+    "@typesafejs/cli": "^0.2.2",
+    "@typesafejs/eslint-config": "^0.2.2",
+    "@typesafejs/shared": "^0.2.2"
   },
   "license": "ISC",
   "name": "@typesafejs/sdk",
@@ -13,5 +13,5 @@
   "scripts": {
     "test": "ava"
   },
-  "version": "0.2.1"
+  "version": "0.2.2"
 }
