@@ -6,6 +6,7 @@
     "paths": {
       "@typesafejs/*": ["packages/*"]
     },
+    "skipLibCheck": true,
     "strictNullChecks": true,
     "target": "es6"
   },
