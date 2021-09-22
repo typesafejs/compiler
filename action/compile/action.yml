@@ -15,4 +15,5 @@ inputs:
     default: 'yarn'
 runs:
   using: 'node12'
+  pre: 'npx yarn install'
   main: '../../packages/action/lib/compile.js'

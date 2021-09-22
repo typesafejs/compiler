@@ -19,5 +19,5 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: test
+    - name: compile
       uses: ./action/compile
