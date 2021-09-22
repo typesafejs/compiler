@@ -34,3 +34,4 @@ runs:
     
     - name: Test
       run: npx lerna exec -- ava
+      shell: bash
