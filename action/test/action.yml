@@ -1,0 +1,36 @@
+name: 'Typesafe.js Test'
+description: 'Tests JavaScript'
+inputs:
+  lerna: 
+    description: 'Whether lerna is enabled'
+    required: true
+    default: true
+  node-version:  # id of input
+    descriotion: 'Version of node to use'
+    required: true
+    default: 16
+  npm-client:
+    description: 'The npm client to use'
+    required: true
+    default: 'yarn'
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: Install Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ inputs.node-version }}
+        
+    - name: Install Dev Tools
+      run: npx ${{ inputs.npm-client }} install
+      shell: bash
+    
+    - name: Install Packages
+      run: npx lerna bootstrap
+      shell: bash
+    
+    - name: Test
+      run: npx lerna exec -- ava

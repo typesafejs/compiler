@@ -1,0 +1,19 @@
+name: compile
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - '**.js'
+      - '**.yml'
+    tags-ignore:
+      - '**'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: ./action/test
