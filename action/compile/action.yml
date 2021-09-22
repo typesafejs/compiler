@@ -33,7 +33,7 @@ runs:
       shell: bash
     
     - name: Lint
-      run: npx lerna exec -- eslint bin lib test
+      run: npx lerna exec -- eslint --no-error-on-unmatched-pattern bin lib test
       shell: bash
 
     - name: Compile
