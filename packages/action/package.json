@@ -8,8 +8,10 @@
   },
   "description": "Shared code and dependencies for type-safe JavaScript",
   "dependencies": {
-    "@typesafejs/shared": "^0.2.0",
+    "@actions/core": "^1.5.0",
+    "@actions/github": "^5.0.0",
     "@types/node": "^16.9.1",
+    "@typesafejs/shared": "^0.2.0",
     "typescript": "^4.4.3"
   },
   "license": "ISC",
