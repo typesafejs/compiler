@@ -6,7 +6,7 @@ const Process = require('./process')
  */
 async function main() {
   console.info('cwd: ' + process.cwd())
-  await Process.spawn('npx yarn add @action/core')
+  await Process.spawn('npx yarn add @actions/core')
   const core = require('@actions/core')
 
   await Process.spawn('npx yarn install')
