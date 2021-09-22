@@ -15,4 +15,4 @@ inputs:
     default: 'yarn'
 runs:
   using: 'node12'
-  main: './packages/action/lib/compile.js'
+  main: '../../packages/action/lib/compile.js'
