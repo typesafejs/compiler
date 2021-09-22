@@ -12,7 +12,7 @@ class Linter {
   async lint (paths) {
     const eslintConfigFile = Path.join(__dirname, '../.eslintrc.json')
     const eslintPluginDir = Path.join(__dirname, '../node_modules')
-    const eslintConfig = JSON.parse(require('fs').readFileSync(eslintConfigFile))
+    const eslintConfig = JSON.parse(require('fs').readFileSync(eslintConfigFile, 'utf-8'))
     console.info('Loading ESLint config from: ' + eslintConfigFile)
     const eslint = new ESLint({
       baseConfig: eslintConfig,

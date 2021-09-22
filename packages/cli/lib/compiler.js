@@ -20,6 +20,7 @@ class TypeSafe {
 
     allDiagnostics.forEach(diagnostic => {
       if (diagnostic.file) {
+        // @ts-ignore
         const { line, character } = TypeScript.getLineAndCharacterOfPosition(diagnostic.file, diagnostic.start)
         const message = TypeScript.flattenDiagnosticMessageText(diagnostic.messageText, '\n')
         console.log(`${diagnostic.file.fileName} (${line + 1},${character + 1}): ${message}`)
@@ -51,8 +52,8 @@ class TypeSafe {
       checkJs: true,
       module: 'commonjs',
       noEmit: true,
-      typeRoots: ['./@types', typesPath],
-      target: TypeScript.ScriptTarget.ES2021
+      target: TypeScript.ScriptTarget.ES2021,
+      typeRoots: ['./@types', typesPath]
     }
   }
 }

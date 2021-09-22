@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "checkJs": true,
+    "module": "commonjs",
+    "paths": {
+      "@typesafejs/*": ["packages/*"]
+    },
+    "strictNullChecks": true,
+    "target": "es6"
+  },
+  "exclude": ["node_modules"],
+}
