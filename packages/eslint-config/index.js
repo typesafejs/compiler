@@ -19,6 +19,7 @@ module.exports = {
       2,
       {
         "checkConstructors": false,
+        "checkSetters": 'no-getter',
         "require": {
           "ClassDeclaration": true,
           "MethodDefinition": true
@@ -36,7 +37,8 @@ module.exports = {
     "sort-class-members/sort-class-members": [
 			2,
 			{
-				"order": [
+				"accessorPairPositioning": "getThenSet",
+        "order": [
 					"[static-properties]",
 					"[static-methods]",
 					"constructor",
@@ -45,16 +47,16 @@ module.exports = {
 					"[methods]",
 					"[conventional-private-methods]"
 				],
-				"accessorPairPositioning": "getThenSet"
+        "sort": "alphabetical"
 			}
 		],
-    "sort-keys": ["error", "asc", {"caseSensitive": false, "natural": false, "minKeys": 2}],
     "sort-imports": ["error", {
+      "allowSeparatedGroups": false,
       "ignoreCase": false,
       "ignoreDeclarationSort": true,
       "ignoreMemberSort": false,
-      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-      "allowSeparatedGroups": false
-  }]
+      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+    }],
+    "sort-keys": ["error", "asc", {"caseSensitive": false, "minKeys": 2, "natural": false}]
   }
 }
