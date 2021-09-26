@@ -1,3 +1,4 @@
+const core = require('@actions/core')
 const Process = require('./process')
 
 /**
@@ -12,7 +13,6 @@ async function main() {
   await Process.spawn('npx lerna bootstrap')
   const result = await Process.spawn('npx lerna exec -- tsc --project jsconfig.json')
 
-  const core = require('@actions/core')
   if (result.exitCode !== 0) {
     core.setFailed(result.stderr)
   }

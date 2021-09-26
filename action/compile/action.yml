@@ -14,5 +14,6 @@ inputs:
     required: true
     default: 'yarn'
 runs:
-  using: 'node12'
-  main: '../../packages/action/lib/compile.js'
+  using: 'docker'
+  entryPoint: pwd && node packages/action/lib/compile.js
+  image: './action/Dockerfile'
