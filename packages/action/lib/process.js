@@ -49,6 +49,7 @@ class Process {
         if (code === null) {
           code = 0
         }
+        console.info("Completed command: " + this.command)
         resolve(new Result(code, stdout, stderr))
       })
     })
