@@ -15,7 +15,7 @@ class Process {
     }
 
     if (result.stderr.length > 0) {
-      console.info(result.stderr)
+      console.error(result.stderr)
     }
     return result
   }
@@ -42,13 +42,14 @@ class Process {
       });
       
       process.stderr.on('data', (data) => {
+        console.error(data.toString())
         stderr += data.toString()
       });
 
       process.on('exit', (code) => {
         if (code === null) {
           code = 0
-        }
+        } 
         console.info("Exited command: " + this.command)
         resolve(new Result(code, stdout, stderr))
       })
