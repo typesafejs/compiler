@@ -5,8 +5,8 @@
     "super-streams"
   ],
   "dependencies": {
-    "@typesafejs/shared": "^0.2.2"
-  }, 
+    "@typesafejs/shared": "^0.2.3"
+  },
   "license": "ISC",
   "name": "@typesafejs/eslint-config",
   "peerDependencies": {
@@ -25,5 +25,5 @@
   "scripts": {
     "test": "ava"
   },
-  "version": "0.2.2"
+  "version": "0.2.3"
 }

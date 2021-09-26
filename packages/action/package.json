@@ -11,7 +11,7 @@
     "@actions/core": "^1.5.0",
     "@actions/github": "^5.0.0",
     "@types/node": "^16.9.1",
-    "@typesafejs/shared": "^0.2.0",
+    "@typesafejs/shared": "^0.2.3",
     "typescript": "^4.4.3"
   },
   "license": "ISC",
@@ -19,5 +19,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.2.2"
+  "version": "0.2.3"
 }
