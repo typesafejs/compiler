@@ -15,5 +15,5 @@ inputs:
     default: 'yarn'
 runs:
   using: 'docker'
-  entryPoint: pwd && node packages/action/lib/compile.js
+  entrypoint: pwd && node packages/action/lib/compile.js
   image: './action/Dockerfile'
