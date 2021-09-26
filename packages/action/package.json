@@ -6,6 +6,9 @@
       "test/**/*.test.js"
     ]
   },
+  "bin": {
+    "run": "bin/run.js"
+  },
   "description": "Shared code and dependencies for type-safe JavaScript",
   "dependencies": {
     "@actions/core": "^1.5.0",
