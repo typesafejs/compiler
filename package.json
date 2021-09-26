@@ -32,5 +32,8 @@
   "scripts": {
     "test": "ava"
   },
-  "version": "0.2.0"
+  "version": "0.2.0",
+  "workspaces": [
+    "packages/*"
+  ]
 }
