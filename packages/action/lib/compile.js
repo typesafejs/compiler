@@ -5,7 +5,7 @@ const Process = require('./process')
  * @returns {Promise<void>}
  */
 async function main() {
-  console.info('now cwd: ' + process.cwd())
+  console.info('now 2 cwd: ' + process.cwd())
   await Process.spawn('npx yarn add -W @actions/core')
   await Process.spawn('npx yarn install')
   await Process.spawn('npx lerna bootstrap')
