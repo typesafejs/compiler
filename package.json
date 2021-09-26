@@ -12,6 +12,7 @@
   },
   "description": "Utilities for compiling JavaScript",
   "dependencies": {
+    "@actions/core": "^1.5.0",
     "typescript": "^4.4.3"
   },
   "devDependencies": {
