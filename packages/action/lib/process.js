@@ -33,27 +33,11 @@ class Process {
    */
   async run() {
     const commandArray = this.command.split(' ')
-    const process = ChildProcess.spawn(commandArray[0], commandArray.splice(1))
-    return new Promise((resolve) => {
-      let stdout = ''
-      let stderr = ''
-      process.stdout.on('data', (data) => {
-        stdout += data.toString()
-      });
-      
-      process.stderr.on('data', (data) => {
-        console.error(data.toString())
-        stderr += data.toString()
-      });
-
-      process.on('exit', (code) => {
-        if (code === null) {
-          code = 0
-        } 
-        console.info("Exited command: " + this.command)
-        resolve(new Result(code, stdout, stderr))
-      })
-    })
+    const result = ChildProcess.spawnSync(commandArray[0], commandArray.splice(1))
+    if (result.status === null) {
+      result.status = 0
+    }
+    return new Result(result.status, result.stdout.toString(), result.stderr.toString())
   }
 
 }
