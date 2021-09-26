@@ -1,4 +1,4 @@
-name: test
+name: compile
 
 on:
   push:
@@ -13,11 +13,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  compile:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
 
     - name: test
-      uses: ./action/test
+      uses: typesafejs/action@main
+      with:
+        task: test
