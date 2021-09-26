@@ -16,4 +16,4 @@ inputs:
 runs:
   using: 'docker'
   entrypoint: pwd && node packages/action/lib/compile.js
-  image: './action/Dockerfile'
+  image: '../Dockerfile'
