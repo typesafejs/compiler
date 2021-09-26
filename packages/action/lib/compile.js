@@ -5,13 +5,13 @@ const Process = require('./process')
  * @returns {Promise<void>}
  */
 async function main() {
-  console.info('cwd: ' + process.cwd())
+  console.info('now cwd: ' + process.cwd())
   await Process.spawn('npx yarn add @actions/core')
-  const core = require('@actions/core')
-
   await Process.spawn('npx yarn install')
   await Process.spawn('npx lerna bootstrap')
   const result = await Process.spawn('npx lerna exec -- tsc --project jsconfig.json')
+
+  const core = require('@actions/core')
   if (result.exitCode !== 0) {
     core.setFailed(result.stderr)
   }
