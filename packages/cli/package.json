@@ -7,8 +7,9 @@
     ]
   },
   "bin": {
-    "tsjsc": "bin/compile.js",
-    "tsjslint": "bin/lint.js"
+    "jsc": "bin/compile.js",
+    "jsd": "bin/declare.js",
+    "jslint": "bin/lint.js"
   },
   "description": "Utilities for compiling JavaScript",
   "dependencies": {
