@@ -16,6 +16,7 @@
     "@typesafejs/shared": "^0.2.3"
   },
   "devDependencies": {
+    "@types/node": "^16.10.1",
     "ava": "^3.15.0",
     "lerna": "^4.0.0"
   },
