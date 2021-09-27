@@ -12,7 +12,7 @@
   },
   "description": "Utilities for compiling JavaScript",
   "dependencies": {
-    "@typesafejs/eslint-config": "^0.2.3",
+    "@typesafejs/eslint-config": "^0.2.5",
     "@typesafejs/shared": "^0.2.3"
   },
   "devDependencies": {
@@ -27,5 +27,5 @@
   "scripts": {
     "test": "ava"
   },
-  "version": "0.2.3"
+  "version": "0.2.5"
 }
