@@ -27,6 +27,8 @@
   "name": "@typesafejs/cli",
   "private": true,
   "scripts": {
+    "compile": "tsc",
+    "lint": "eslint src",
     "test": "ava"
   },
   "workspaces": [
