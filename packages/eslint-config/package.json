@@ -12,12 +12,11 @@
   "description": "ESLint configuration for type safe JavaScript",
   "license": "ISC",
   "name": "@typesafejs/eslint-config",
-  
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "test": "ava"
   },
-  "version": "0.2.5"
+  "version": "0.2.7"
 }
