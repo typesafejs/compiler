@@ -9,7 +9,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-sort-class-members": "^1.11.0"
   },
-  "description": "ESLint configuration for type safe JavaScript",
+  "description": "ESLint configuration for writing type-safe JavaScript",
   "license": "ISC",
   "name": "@typesafejs/eslint-config",
   "publishConfig": {
