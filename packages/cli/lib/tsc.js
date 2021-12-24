@@ -88,7 +88,6 @@ class TSC {
       declaration: true,
       emitDeclarationOnly: true,
       module: 'commonjs',
-      noResolve: true,
       outDir: './types',
       target: TypeScript.ScriptTarget.ES2021,
       typeRoots: ['./@types', typesPath]

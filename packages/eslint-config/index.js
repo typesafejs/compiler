@@ -46,9 +46,9 @@ module.exports = {
 					"[properties]",
 					"[conventional-private-properties]",
 					"[methods]",
-					"[conventional-private-methods]"
+					"[conventional-private-methods]",
+          { "sort": "alphabetical" }
 				],
-        "sort": "alphabetical"
 			}
 		],
     "sort-imports": ["error", {

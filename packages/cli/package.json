@@ -13,13 +13,11 @@
   },
   "description": "Utilities for compiling JavaScript",
   "dependencies": {
-    "@typesafejs/eslint-config": "^0.2.8",
-    "@typesafejs/shared": "^0.2.3"
+    "@typesafejs/eslint-config": "^0.2.8"
   },
   "devDependencies": {
     "@types/node": "^16.10.1",
-    "ava": "^3.15.0",
-    "lerna": "^4.0.0"
+    "ava": "^3.15.0"
   },
   "license": "ISC",
   "name": "@typesafejs/cli",
