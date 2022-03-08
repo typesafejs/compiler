@@ -8,6 +8,7 @@ module.exports = {
   },
   "plugins": [
     "jsdoc",
+    "require-sort",
     "sort-class-members"
   ],
   "rules": {
@@ -35,6 +36,12 @@ module.exports = {
     }],
     "jsdoc/require-returns-type": 2,
     "no-unused-vars": 2,
+    "require-sort/require-sort": [
+      2,
+      {
+        "ignoreCase": true
+      }
+    ],
     "sort-class-members/sort-class-members": [
 			2,
 			{
