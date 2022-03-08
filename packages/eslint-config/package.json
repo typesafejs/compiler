@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@actions/core": "^1.5.0",
-    "@typesafejs/shared": "^0.3.0",
+    "@typesafejs/shared": "^0.3.1",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.2",
@@ -22,5 +22,5 @@
   "scripts": {
     "test": "ava"
   },
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
